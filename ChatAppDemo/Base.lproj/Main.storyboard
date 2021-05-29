@@ -19,12 +19,11 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ljf-Tb-Sba">
                                 <rect key="frame" x="15" y="59" width="384" height="788"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11A-wk-2YW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11A-wk-2YW" userLabel="InputView">
                                 <rect key="frame" x="20" y="643" width="374" height="179"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="2VQ-Ta-Ayc">
@@ -43,6 +42,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbw-Hk-sHn">
                                                 <rect key="frame" x="0.0" y="138.5" width="374" height="40.5"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="tappedSendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqi-ee-kyM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -59,16 +61,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="11A-wk-2YW" secondAttribute="bottom" constant="40" id="05f-ar-ODx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ljf-Tb-Sba" secondAttribute="bottom" constant="15" id="JQ3-0i-u11"/>
                             <constraint firstItem="Ljf-Tb-Sba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="PVd-Hb-XtN"/>
                             <constraint firstItem="11A-wk-2YW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="VDx-CE-cJQ"/>
                             <constraint firstItem="11A-wk-2YW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q4m-Aw-bTb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="11A-wk-2YW" secondAttribute="trailing" constant="20" id="rWY-CA-KXy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ljf-Tb-Sba" secondAttribute="trailing" constant="15" id="slj-LW-Rbx"/>
                             <constraint firstItem="Ljf-Tb-Sba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zWc-XA-0C1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ljf-Tb-Sba" secondAttribute="bottom" constant="15" id="zeU-5v-65X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="11A-wk-2YW" secondAttribute="bottom" constant="40" id="zeU-5v-65X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputViewBottomMargin" destination="zeU-5v-65X" id="Hsr-UL-CR5"/>
+                        <outlet property="messageInputField" destination="47G-Ak-xjQ" id="pNY-nM-9YP"/>
+                        <outlet property="nameInputField" destination="bb1-Kw-Erk" id="40k-Dg-gCg"/>
+                        <outlet property="textView" destination="Ljf-Tb-Sba" id="Sl7-jk-3lZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

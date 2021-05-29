@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		0C952B2726620C380013528D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C952B2526620C380013528D /* LaunchScreen.storyboard */; };
 		0C952B3226620C380013528D /* ChatAppDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C952B3126620C380013528D /* ChatAppDemoTests.swift */; };
 		0C952B3D26620C380013528D /* ChatAppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C952B3C26620C380013528D /* ChatAppDemoUITests.swift */; };
-		0C952B4E26620D260013528D /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C952B4D26620D260013528D /* GoogleService-Info-3.plist */; };
+		0C952B7D266233C80013528D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C952B7C266233C80013528D /* GoogleService-Info.plist */; };
 		19DA0472633FF69877ACC217 /* Pods_ChatAppDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090992E39E0C13F9FCB74959 /* Pods_ChatAppDemoTests.framework */; };
 		70530BA6DC5EFF5660C4065F /* Pods_ChatAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406DD836AB2B648DF2F3D030 /* Pods_ChatAppDemo.framework */; };
 		ED90B64276AB2CA84E9061A0 /* Pods_ChatAppDemo_ChatAppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71942290FD5A16D003A2FB32 /* Pods_ChatAppDemo_ChatAppDemoUITests.framework */; };
@@ -56,7 +56,7 @@
 		0C952B3826620C380013528D /* ChatAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C952B3C26620C380013528D /* ChatAppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppDemoUITests.swift; sourceTree = "<group>"; };
 		0C952B3E26620C380013528D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C952B4D26620D260013528D /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-3.plist"; path = "../../../../Downloads/GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		0C952B7C266233C80013528D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../.Trash/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		406DD836AB2B648DF2F3D030 /* Pods_ChatAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58007A42F74221B6C9E99B68 /* Pods-ChatAppDemo-ChatAppDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppDemo-ChatAppDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppDemo-ChatAppDemoUITests/Pods-ChatAppDemo-ChatAppDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		71942290FD5A16D003A2FB32 /* Pods_ChatAppDemo_ChatAppDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppDemo_ChatAppDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				09014A2AB3286174D81D943E /* Pods-ChatAppDemoTests.debug.xcconfig */,
 				0910F0F59A327D16261ED392 /* Pods-ChatAppDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,7 +138,7 @@
 				0C952B2326620C380013528D /* Assets.xcassets */,
 				0C952B2526620C380013528D /* LaunchScreen.storyboard */,
 				0C952B2826620C380013528D /* Info.plist */,
-				0C952B4D26620D260013528D /* GoogleService-Info-3.plist */,
+				0C952B7C266233C80013528D /* GoogleService-Info.plist */,
 			);
 			path = ChatAppDemo;
 			sourceTree = "<group>";
@@ -283,7 +282,7 @@
 				0C952B2726620C380013528D /* LaunchScreen.storyboard in Resources */,
 				0C952B2426620C380013528D /* Assets.xcassets in Resources */,
 				0C952B2226620C330013528D /* Main.storyboard in Resources */,
-				0C952B4E26620D260013528D /* GoogleService-Info-3.plist in Resources */,
+				0C952B7D266233C80013528D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
